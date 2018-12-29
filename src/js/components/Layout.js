@@ -1,15 +1,14 @@
 import React from "react";
-import "../../assets/css/main.css";
-import "../../assets/css/photo.css";
-import "../../assets/css/bootstrap.min.css";
 import Header from './Header';
 import Footer from './Footer';
+import Title from './Title';
 
 export default class Layout extends React.Component {
     render() {
        return (
-          <div>
+          <div className = "container">
               <Header/>
+                <Title title = {'Photo Management'} />
               <Footer/>
           </div>
        );
