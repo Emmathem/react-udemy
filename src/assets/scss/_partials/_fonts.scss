@@ -1,10 +1,21 @@
-@mixin font-bill
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto:300,400,700');
+@mixin font-bill()
  {
-    @font-face {
-        font-family: 'billabongregular';
-        src: url("https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.eot");
-        src: url("https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.eot?#iefix") format('embedded-opentype'), url("https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.woff") format('woff'), url("https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.ttf") format('truetype'), url("https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.svg#billabongregular") format('svg');
-        font-weight: normal;
-        font-style: normal;
-      }
+    font-family: 'billabong';
+ }
+
+ @mixin roboto() {
+  font-family: 'Roboto', sans-serif !important;
+ }
+
+ @mixin Mon-font() {
+  font-family: 'Montserrat', sans-serif !important;
+ }
+
+@font-face {
+  font-family: 'billabong';
+  src: url("https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.eot");
+  src: url("https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.eot?#iefix") format('embedded-opentype'), url("https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.woff") format('woff'), url("https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.ttf") format('truetype'), url("https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.svg#billabongregular") format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
