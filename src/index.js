@@ -6,7 +6,7 @@ import "../src/assets/css/main.css";
 import "../src/assets/css/photo.css";
 
 import Layout from './js/components/Layout';
-// import Main from './js/components/Main'
+import {BrowserRouter} from 'react-router-dom';
 
 const app = document.getElementById('root');
-ReactDom.render(<Layout/>, app);
+ReactDom.render(<BrowserRouter><Layout/></BrowserRouter>, app);
